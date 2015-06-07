@@ -1,0 +1,280 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <title>HTML/CSS</title>
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" /> 
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4" style="font-size: 40px;">
+                        <p>1、回首HTML、CSS</p>
+                        <p>2、HTML5、CSS3新技能</p>
+                        <p>3、文件之间的组织、存放</p>
+                        <p>4、前端编码利器Sublime Text </p>
+    </div>
+
+    <!-- exp -->
+    <div id="exp1" class="step" data-x="-1300" data-y="1300" data-rotate="120" style="padding: 0;">
+        <div style="width: 50%; float: left;">
+            <pre class="codeblock">
+            &lt;!doctype html&gt;
+            &lt;html lang="zh-CN"&gt;
+            &lt;head&gt;
+                &lt;meta charset="utf-8" /&gt;
+                &lt;title&gt;html编码&lt;/title&gt;
+                &lt;link href="css/index.css" rel="stylesheet" /&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;div id="header"&gt;
+                &lt;/div&gt;
+                &lt;div id="conatiner"&gt;
+                    &lt;div id="left"&gt;
+                    &lt;/div&gt;
+                    &lt;div id="right"&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div id="footer"&gt;
+                &lt;/div&gt;
+                &lt;script src="js/index.js"&gt;&lt;/script&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </pre> 
+        </div>
+        <div style="width: 50%; float: right;">
+            <pre class="codeblock">
+            结构性元素:
+                p        表示段落,只能包含内联元素,不能包含块级元素;
+                div      本身无特殊含义,用于布局.
+                br       表示换行符;hr 表示水平分割线;
+                h1-h6    表示标题：
+                pre      表示一段格式化好的文本;
+            文本元素：
+                a        存在href属性时表示链接;
+                em       表示句意强调,可用于表示不同的心情或语调;
+                strong   表示重要性强调,abbr 表示缩写;
+                sub,sup  主要用于数学和化学公式, 
+                span     本身无特殊含义；
+                ins,del  文档中增加(插入)和删除;
+            媒体元素：
+                img      插入图片,给img元素增加alt属性,
+            列表元素：
+                dl       表示关联列表,dd是对dt的解释;
+                ul       表示无序列表;
+                ol       表示有序列表,可用于排行榜等;
+                li        表示列表项,必须是ul/ol的子元素;
+            </pre>
+        </div>
+    </div>
+    
+    <!-- css简介来源 -->
+    <div id="exp2" class="step" data-x="0" data-y="1300" data-rotate="90">
+        <pre class="codeblock" style="font-size: 30px;">
+        &lt;body&gt;
+            &lt;font size="20" color="red"&gt;
+                &lt;b&gt;
+                    在很久很久以前，web上没有css，
+                    只要内容是干货就好了.
+                    用户不是程序员
+                    他们讲究外表，讲究炫酷，讲究如何的个性
+                    W3C组织就为了满足这些人的胃口:
+                    提供了一些装饰html标记的标记，比如strong，font,b,u
+                &lt;/b&gt;
+            &lt;/font&gt;
+        &lt;/body&gt;
+        </pre>
+    </div>
+    
+    <!-- css引用方式 -->
+    <div id="exp3" class="step" data-x="1300" data-y="1300" data-rotate="45">
+        <pre class="codeblock" style="font-size: 22px;">
+    有三种方法可以在站点网页上使用样式表：
+        外联式Linking（也叫外部样式）：将网页链接到外部样式表。
+            &lt;link rel="stylesheet" type="text/css" href="mystyle.css"&gt;
+        嵌入式Embedding（也叫内页样式）：在网页上创建嵌入的样式表。
+            &lt;head&gt;
+                &lt;style type="text/css"&gt; 
+                    body {background-color: red} 
+                    p {margin-left: 20px}
+                &lt;/style&gt;
+            &lt;/head&gt;
+        内联式Inline（也叫行内样式）：应用内嵌样式到各个网页元素。
+            &lt;p style="color: red; margin-left: 20px"&gt; 
+            This is a paragraph 
+            &lt;/p&gt;
+        其中，优先级：内联式 > 嵌入式 > 外联式
+        </pre>
+    </div> 
+
+    <!-- HTML5新标签 -->
+    <div id="dev1" class="step" data-x="-2500" data-y="1000" data-rotate="30">
+        <pre class="codeblock" style="font-size: 22px;">
+        &lt;canvas&gt; 标签定义图形，比如图表和其他图像。该标签基于 JavaScript 的绘图 API
+        &lt;audio&gt; 定义音频内容
+        &lt;video&gt; 定义视频（video 或者 movie）
+        &lt;source&gt;  定义多媒体资源 &lt;video&gt; 和 &lt;audio&gt;
+        &lt;article&gt;  定义解释文章元素
+        &lt;aside&gt; 定义页面的侧边栏内容
+        &lt;details&gt; 用于描述文档或文档某个部分的细节
+        &lt;dialog&gt;定义对话框，比如提示框
+        &lt;footer&gt; 定义 section 或 document 的页脚。
+        &lt;header&gt; 定义了文档的头部区域
+        &lt;mark&gt; 定义带有记号的文本。
+        &lt;nav&gt; 标签定义导航链接的部分
+        &lt;progress&gt; 定义任何类型的任务的进度。
+        &lt;section&gt; 定义文档中的节（section、区段）。
+        &lt;time&gt; 定义日期或时间。
+        </pre>  
+    </div>
+    
+    <!-- css3新功能 -->
+    <div id="dev2" class="step" data-x="-2500" data-y="2000" data-rotate="-45">
+        <pre class="codeblock" style="font-size: 30px;">
+    选择器  [att^=val] [att*=val] first-child nth-child(n) :empty           
+    背景和边框  border-radius border-image 
+    文字特效 box-shadow
+    2D/3D转换  transform: rotate | scale | skew | translate |matrix;
+    动画  animation
+    多列布局  包括column-width、column-count、column-gap三个值
+        </pre>
+    </div>
+    
+    <!-- 文件存放目录 -->
+    <div id="" class="step" data-x="-2500" data-y="3000" data-rotate="30">
+        <pre>
+                                              <img src="images/file.png" height="585" width="428" alt="文件存放目录结构">
+        </pre>
+    </div>
+    
+    <!-- sublime 编辑器 jsFormat autofilename演示 -->
+    <div id="" class="step" data-x="2500" data-y="1000" data-rotate="-45">
+        <pre>
+            <img src="images/jsFormat.gif" height="284" width="817" alt="">
+            <img src="images/autofilename.gif" height="254" width="653" alt="">
+        </pre>
+    </div>
+    
+    <!-- sublime 编辑器 emmet演示 -->
+    <div id="" class="step" data-x="2500" data-y="2000" data-rotate="60">
+        <pre>
+            <img src="images/emmet.gif" height="355" width="837" alt="">   
+        </pre>
+    </div>
+    
+    <!-- 资源分享 -->
+    <div id="" class="step" data-x="2500" data-y="3000" data-rotate="-30">
+        <pre style="font-size: 35px;">
+                <a target="_blank" href="https://github.com/" title="">www.github.com</a>    <a target="_blank" href="http://www.w3.org/" title="">www.w3.org</a>
+<a target="_blank" href="http://w3cshare.com/" title="">w3cshare.com</a>  <a target="_blank" href="http://www.html5cn.org/" title="">www.html5cn.org</a>  <a href="http://www.xuanfengge.com/" title="">www.xuanfengge.com</a>
+
+        <img src="images/html5.png" height="362" width="330" alt="">    <img src="images/css3.png" height="362" width="330" alt="">
+        </pre>
+    </div>
+    <!-- 
+    <div id="" class="step" data-x="2500" data-y="4000" data-rotate="-90">
+        <q>第四张幻灯片：</q><br />
+        <p class="normal">使用缩放值来显示一个幻灯片如何放大缩小。</p>
+        <pre class="codeblock">
+        &lt;div class="step" data-x="500" data-y="-800" data-scale="0.5"&gt;
+            This is slide 4
+        &lt;/div&gt;
+        </pre>
+        <p class="normal">它的scale值为0.5，意味着它应该是一半的尺寸。当它变成活动的演示时将通过必需的倍数调节所有幻灯片的缩放尺寸。在这个示例中它的意思就是这个幻灯片应该正常显示（比例为1），它将需要被放大2倍 (0.5*2 = 1)，所有的其他幻灯片也将被放大至2倍而变成2倍大小。</p>
+    </div>
+
+    <div id="" class="step" data-x="2500" data-y="5000" data-rotate="-90">
+        <q>第五张幻灯片：</q><br />
+        <p class="normal">旋转属性允许你旋转一个幻灯片到当前视图，幻灯片5被设置旋转50度。</p>
+        <pre class="codeblock">
+        &lt;div class="step" data-x="0" data-y="-800" data-rotate="90"&gt;
+            This is slide 5 and it rotates in.
+        &lt;/div&gt;
+        </pre>
+        <p class="normal">旋转属性允许你旋转一个幻灯片到当前视图，幻灯片5被设置旋转50度。</p>
+    </div>
+
+    <div id="" class="step" data-x="2500" data-y="6000" data-rotate="-90">
+        <q>3D转换：</q><br />
+        <p class="normal">你可为每个维度的轴指定旋转属性(x,y,z)。</p>
+        <pre class="codeblock">
+        &lt;div class="step" data-x="-2600" data-y="-800" 
+            data-rotate-x="30" data-rotate-y="-30" data-rotate-z="90" data-scale="4"&gt;
+        This is slide 6 and it has a 3D transition AND a scale.
+        &lt;/div&gt;
+        </pre>
+        <p class="normal">x轴是横轴，意思是你可使事物倾斜(正值)或向后(负值)，y轴是竖轴，所以你可使事物向左摇摆(负值)或向右(正值)，z轴是纵轴，这将是旋转的东西向上（负值）和向下（正值）。</p>
+    </div>
+
+
+    <div id="" class="step" data-x="-2500" data-y="4000" data-rotate="90">
+        <q>组合：</q><br />
+        <p class="normal">你可以以你的想象力用不可思议的和令人惊奇的方式合并这些效果来创建你自己的幻灯片展示风格。</p>
+        <pre class="codeblock">
+            实时数据演示(ajax请求后台数据)
+            定时器自动播放
+            触摸屏演示系统
+        </pre>
+    </div>
+
+    <div id="" class="step" data-x="-2500" data-y="5000" data-rotate="90">
+        <q>API：</q><br />
+        <p class="normal">使用impress.js提供的api来控制幻灯片的显示。</p>
+        <pre class="codeblock">
+            var api = impress();
+            `api.next()` - 跳到下一张幻灯片,
+            `api.prev()` - 跳到上一张幻灯片
+            `api.goto(stepElement) - 跳到制定的幻灯片.
+        </pre>
+    </div>
+
+    <div id="" class="step" data-x="-2500" data-y="6000" data-rotate="90">
+        <q>不支持的浏览器：</q><br />
+        <p class="normal">Impress自动检测浏览器支持与否，并且如果不支持则自动向wrapper“&lt;div&gt;”添加一个样式名称为“impress-not-supported”的样式，使用一些css我们可以在浏览器上向人们显示不支持Impress的信息。在开始的&lt;div id="impress"&gt;添加下面的内容：</p>
+        <pre class="codeblock">
+        &lt;div class="no-support-message"&gt;
+            Your browser doesn't support impress.js.  Try Chrome or Safari.
+        &lt;/div&gt;
+        </pre>
+        <p class="normal">然后，创建一个样式表单或引入一个已经存在的样式表单：</p>
+        <pre class="codeblock">
+        .no-support-message { display:none; }
+        .impress-not-supported .no-support-message { display:block; }
+        </pre>
+        <p class="normal">默认是隐藏消息的，但如果浏览器不支持时当前样式就会变成impress-not-supported。</p>
+    </div>
+
+    <div id="" class="step" data-x="-4000" data-y="7000" data-z="-3000" data-rotate="300" data-scale="1">
+        <q>全局预览：</q><br />
+        <p class="normal">增加一个id为overview的幻灯片</p>
+        <pre class="codeblock">
+            &lt;div id="overview" class="step" data-x="1000" data-y="2000" data-scale="10"&gt;
+            &lt;/div&gt;
+        </pre>
+    </div> -->
+
+    <!-- 全部展示网页 -->
+    <div id="overview" class="step" data-x="1000" data-y="2000" data-scale="10">
+    </div>
+
+    <!-- 结束语 -->
+    <div id="last" class="step" data-x="0" data-y="3000" data-scale="3" data-z="-100" data-rotate-x="-60" data-rotate-y="10" >
+        <q>结语：</q><br />
+        <p class="normal">谢谢,听我的咋呼...</p>
+        <p class="normal">好书共分享，阅读丰富人生。</p>
+        <p class="normal">相互学习,共同提高.</p>
+        <p class="normal">刘明明</p>
+    </div>
+
+</div>
+
+
+<script src="js/transition.js"></script>
+<script>impress();</script>
+
+</body>
+</html>
