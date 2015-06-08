@@ -23,27 +23,27 @@
     <div id="exp1" class="step" data-x="-1300" data-y="1300" data-rotate="120" style="padding: 0;">
         <div style="width: 50%; float: left;">
             <pre class="codeblock">
-            &lt;!doctype html&gt;
-            &lt;html lang="zh-CN"&gt;
-            &lt;head&gt;
-                &lt;meta charset="utf-8" /&gt;
-                &lt;title&gt;html编码&lt;/title&gt;
-                &lt;link href="css/index.css" rel="stylesheet" /&gt;
-            &lt;/head&gt;
-            &lt;body&gt;
-                &lt;div id="header"&gt;
-                &lt;/div&gt;
-                &lt;div id="conatiner"&gt;
-                    &lt;div id="left"&gt;
-                    &lt;/div&gt;
-                    &lt;div id="right"&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div id="footer"&gt;
-                &lt;/div&gt;
-                &lt;script src="js/index.js"&gt;&lt;/script&gt;
-            &lt;/body&gt;
-            &lt;/html&gt;
+    &lt;!doctype html&gt;
+    &lt;html lang="zh-CN"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8" /&gt;
+        &lt;title&gt;html编码&lt;/title&gt;
+        &lt;link href="css/index.css" rel="stylesheet" /&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div id="header"&gt;
+        &lt;/div&gt;
+        &lt;div id="conatiner"&gt;
+            &lt;div id="left"&gt;
+            &lt;/div&gt;
+            &lt;div id="right"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="footer"&gt;
+        &lt;/div&gt;
+        &lt;script src="js/index.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
             </pre> 
         </div>
         <div style="width: 50%; float: right;">
@@ -146,116 +146,94 @@
     
     <!-- 文件存放目录 -->
     <div id="" class="step" data-x="-2500" data-y="3000" data-rotate="30">
-        <pre>
-                                              <img src="images/file.png" height="585" width="428" alt="文件存放目录结构">
-        </pre>
+        <pre style="font-size: 40px;">
+HTML撇开该标记语言自身要求不谈，有以下难点：
+1、语义化
+2、恰如其分的结构
+3、数据绑定 
+        </pre>  
     </div>
     
     <!-- sublime 编辑器 jsFormat autofilename演示 -->
     <div id="" class="step" data-x="2500" data-y="1000" data-rotate="-45">
-        <pre>
-            <img src="images/jsFormat.gif" height="284" width="817" alt="">
-            <img src="images/autofilename.gif" height="254" width="653" alt="">
-        </pre>
+<pre style="font-size: 19px;">
+CSS撇开该标记语言自身要求不谈，有以下难点：
+1、盒模型:
+    HTML每个元素都具有盒模型特性，即具有外边距(margin),边框(border),内边距(padding)，
+    内容流:在现实生活中就是指流水，在网页设计中是指html元素的排列方式，
+    标准流:元素在网页中就像流水，排在前面的元素内容就前面出现，排后面的元素内容就后面出现，
+    非标准流:当某个元素脱离了标准流(比如因为相对定位)排列，我们统称为非标准流排列。
+2、块元素、行内元素:
+    1).行内元素与块级元素直观上的区别
+        行内元素会在一条直线上排列，都是同一行的，水平方向排列
+        块级元素各占据一行，垂直方向排列。块级元素从新行开始结束接着一个断行。
+    2).块级元素可以包含行内元素和块级元素。行内元素不能包含块级元素。
+    3).行内元素与块级元素属性的不同，主要是盒模型属性上
+        行内元素设置width无效，height无效(可以设置line-height)，
+        margin上下无效，padding上下无效
+    display:inline/block使得HTML元素为块或行内元素。
+3、浮动: float : none | left |right 
+     对后续同等元素的影响(&lt;div style="clear:both"&gt;&lt;/div&gt;)和对父元素的影响( overflow:hidden)
+     .right:after{content:'',clear:both;width:0;display:block}
+     清除浮动: clear : none | left |right | both 
+4、定位：position:relative | absolute | static | fixed
+
+</pre>
     </div>
     
     <!-- sublime 编辑器 emmet演示 -->
     <div id="" class="step" data-x="2500" data-y="2000" data-rotate="60">
         <pre>
-            <img src="images/emmet.gif" height="355" width="837" alt="">   
+                                              <img src="images/file.png" height="585" width="428" alt="文件存放目录结构">
         </pre>
     </div>
     
     <!-- 资源分享 -->
     <div id="" class="step" data-x="2500" data-y="3000" data-rotate="-30">
+        <pre>
+            <img src="images/jsFormat.gif" height="284" width="817" alt="">
+            <img src="images/autofilename.gif" height="254" width="653" alt="">
+        </pre>
+    </div>
+  
+    <div id="" class="step" data-x="2500" data-y="4000" data-rotate="-90">
+        <pre>
+            <img src="images/emmet.gif" height="355" width="837" alt="">   
+        </pre>
+
+    </div>
+
+    <div id="" class="step" data-x="2500" data-y="5000" data-rotate="-90">
         <pre style="font-size: 35px;">
-<a target="_blank" href="https://github.com/" title="">www.github.com</a> <a target="_blank" href="http://www.w3.org/" title="">www.w3.org</a> <a href="http://www.w3school.com.cn/">www.w3school.com.cn/</a>
+                <a target="_blank" href="https://github.com/" title="">www.github.com</a>    <a target="_blank" href="http://www.w3.org/" title="">www.w3.org</a>
 <a target="_blank" href="http://w3cshare.com/" title="">w3cshare.com</a>  <a target="_blank" href="http://www.html5cn.org/" title="">www.html5cn.org</a>  <a href="http://www.xuanfengge.com/" title="">www.xuanfengge.com</a>
 
         <img src="images/html5.png" height="362" width="330" alt="">    <img src="images/css3.png" height="362" width="330" alt="">
         </pre>
     </div>
+    
     <!-- 
-    <div id="" class="step" data-x="2500" data-y="4000" data-rotate="-90">
-        <q>第四张幻灯片：</q><br />
-        <p class="normal">使用缩放值来显示一个幻灯片如何放大缩小。</p>
-        <pre class="codeblock">
-        &lt;div class="step" data-x="500" data-y="-800" data-scale="0.5"&gt;
-            This is slide 4
-        &lt;/div&gt;
-        </pre>
-        <p class="normal">它的scale值为0.5，意味着它应该是一半的尺寸。当它变成活动的演示时将通过必需的倍数调节所有幻灯片的缩放尺寸。在这个示例中它的意思就是这个幻灯片应该正常显示（比例为1），它将需要被放大2倍 (0.5*2 = 1)，所有的其他幻灯片也将被放大至2倍而变成2倍大小。</p>
-    </div>
-
-    <div id="" class="step" data-x="2500" data-y="5000" data-rotate="-90">
-        <q>第五张幻灯片：</q><br />
-        <p class="normal">旋转属性允许你旋转一个幻灯片到当前视图，幻灯片5被设置旋转50度。</p>
-        <pre class="codeblock">
-        &lt;div class="step" data-x="0" data-y="-800" data-rotate="90"&gt;
-            This is slide 5 and it rotates in.
-        &lt;/div&gt;
-        </pre>
-        <p class="normal">旋转属性允许你旋转一个幻灯片到当前视图，幻灯片5被设置旋转50度。</p>
-    </div>
-
     <div id="" class="step" data-x="2500" data-y="6000" data-rotate="-90">
-        <q>3D转换：</q><br />
-        <p class="normal">你可为每个维度的轴指定旋转属性(x,y,z)。</p>
-        <pre class="codeblock">
-        &lt;div class="step" data-x="-2600" data-y="-800" 
-            data-rotate-x="30" data-rotate-y="-30" data-rotate-z="90" data-scale="4"&gt;
-        This is slide 6 and it has a 3D transition AND a scale.
-        &lt;/div&gt;
-        </pre>
-        <p class="normal">x轴是横轴，意思是你可使事物倾斜(正值)或向后(负值)，y轴是竖轴，所以你可使事物向左摇摆(负值)或向右(正值)，z轴是纵轴，这将是旋转的东西向上（负值）和向下（正值）。</p>
+        
     </div>
 
 
     <div id="" class="step" data-x="-2500" data-y="4000" data-rotate="90">
-        <q>组合：</q><br />
-        <p class="normal">你可以以你的想象力用不可思议的和令人惊奇的方式合并这些效果来创建你自己的幻灯片展示风格。</p>
-        <pre class="codeblock">
-            实时数据演示(ajax请求后台数据)
-            定时器自动播放
-            触摸屏演示系统
-        </pre>
+        
     </div>
 
     <div id="" class="step" data-x="-2500" data-y="5000" data-rotate="90">
-        <q>API：</q><br />
-        <p class="normal">使用impress.js提供的api来控制幻灯片的显示。</p>
-        <pre class="codeblock">
-            var api = impress();
-            `api.next()` - 跳到下一张幻灯片,
-            `api.prev()` - 跳到上一张幻灯片
-            `api.goto(stepElement) - 跳到制定的幻灯片.
-        </pre>
+       
     </div>
 
     <div id="" class="step" data-x="-2500" data-y="6000" data-rotate="90">
-        <q>不支持的浏览器：</q><br />
-        <p class="normal">Impress自动检测浏览器支持与否，并且如果不支持则自动向wrapper“&lt;div&gt;”添加一个样式名称为“impress-not-supported”的样式，使用一些css我们可以在浏览器上向人们显示不支持Impress的信息。在开始的&lt;div id="impress"&gt;添加下面的内容：</p>
-        <pre class="codeblock">
-        &lt;div class="no-support-message"&gt;
-            Your browser doesn't support impress.js.  Try Chrome or Safari.
-        &lt;/div&gt;
-        </pre>
-        <p class="normal">然后，创建一个样式表单或引入一个已经存在的样式表单：</p>
-        <pre class="codeblock">
-        .no-support-message { display:none; }
-        .impress-not-supported .no-support-message { display:block; }
-        </pre>
-        <p class="normal">默认是隐藏消息的，但如果浏览器不支持时当前样式就会变成impress-not-supported。</p>
+        
     </div>
 
     <div id="" class="step" data-x="-4000" data-y="7000" data-z="-3000" data-rotate="300" data-scale="1">
-        <q>全局预览：</q><br />
-        <p class="normal">增加一个id为overview的幻灯片</p>
-        <pre class="codeblock">
-            &lt;div id="overview" class="step" data-x="1000" data-y="2000" data-scale="10"&gt;
-            &lt;/div&gt;
-        </pre>
-    </div> -->
+        
+    </div> 
+    -->
 
     <!-- 全部展示网页 -->
     <div id="overview" class="step" data-x="1000" data-y="2000" data-scale="10">
